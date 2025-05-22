@@ -35,7 +35,7 @@ const Header = () => {
       <header className="fixed top-0 left-0 right-0 bg-[#333333] shadow-md w-full z-[999]">
         {/* Top Bar */}
         <div className="bg-[#97877a] shadow-md w-full p-3 lg:block">
-          <div className="max-w-7xl mx-auto px-4 text-center text-white lg:text-lg">
+          <div className="max-w-7xl mx-auto px-4 text-center text-white lg:text-lg text-sm">
             <h1>FREE SHIPPING WORLDWIDE THROUGH MAY</h1>
           </div>
         </div>

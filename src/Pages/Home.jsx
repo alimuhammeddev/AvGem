@@ -3,6 +3,7 @@ import Header from '../Header';
 import { bg1, bg2 } from '../assets';
 import DiamondRings from '../Components/DiamondRings';
 import DiamondShip from '../Components/DiamondShip';
+import RawDiamonds from '../Components/RawDiamonds';
 
 const Home = () => {
   const images = [
@@ -83,6 +84,10 @@ const Home = () => {
 
       <div>
         <DiamondShip />
+      </div>
+
+      <div>
+        <RawDiamonds />
       </div>
     </>
   );

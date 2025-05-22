@@ -3,7 +3,7 @@ import { d1, d2, d3, d4, h1, h2, h3, h4 } from '../assets'
 
 const DiamondShip = () => {
     return (
-        <section className='bg-[#f8f3f0] lg:p-5'> <br />
+        <section className='bg-[#f8f3f0] lg:p-5 lg:mt-16 mt-5'> <br />
             <div className='max-w-7xl mx-auto'>
                 <h1 className='text-[#97877a] lg:text-4xl text-xl font-medium mt-10 text-center'>Ready-to-Ship One-of-a-Kind Pieces</h1>
             </div>
@@ -101,7 +101,7 @@ const DiamondShip = () => {
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
                         </div>
-                    </div>
+                    </div><br /><br />
                 </div>
             </div>
         </section>

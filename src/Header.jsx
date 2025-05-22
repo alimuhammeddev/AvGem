@@ -7,27 +7,34 @@ import { BiCart } from "react-icons/bi";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
-  const [mobileBlogOpen, setMobileBlogOpen] = useState(false);
-  const [desktopCompanyOpen, setDesktopCompanyOpen] = useState(false);
-  const [desktopBlogOpen, setDesktopBlogOpen] = useState(false);
+  const [mobileStonesOpen, setMobileStonesOpen] = useState(false);
+  const [mobileRawOpen, setMobileRawOpen] = useState(false);
+  const [mobileJewelryOpen, setMobileJewelryOpen] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [desktopRawOpen, setDesktopRawOpen] = useState(false);
+  const [desktopJewelryOpen, setDesktopJewelryOpen] = useState(false);
+  const [desktopAboutOpen, setDesktopAboutOpen] = useState(false);
+  const [desktopStonesOpen, setDesktopStonesOpen] = useState(false);
 
   const toggleMenu = () => setOpen(!open);
   const closeAllMenus = () => {
     setOpen(false);
-    setMobileCompanyOpen(false);
-    setMobileBlogOpen(false);
-    setDesktopCompanyOpen(false);
-    setDesktopBlogOpen(false);
+    setMobileStonesOpen(false);
+    setMobileRawOpen(false);
+    setMobileJewelryOpen(false);
+    setMobileAboutOpen(false);
+    setDesktopRawOpen(false);
+    setDesktopJewelryOpen(false);
+    setDesktopAboutOpen(false);
+    setDesktopStonesOpen(false);
   };
 
   const navLinks = [
-    { name: "HOME", url: "/" },
-    { name: "COMPANY", url: "#" },
-    { name: "OUR PROJECT", url: "/our-project" },
-    { name: "BLOG", url: "#" },
-    { name: "OUR TEAM", url: "/team" },
-    { name: "CONTACT US", url: "/contact-us" },
+    { name: "STONES", url: "#" },
+    { name: "RAW DIAMOND RINGS", url: "#" },
+    { name: "RING BUILDER", url: "" },
+    { name: "JEWELRY", url: "#" },
+    { name: "ABOUT", url: "#" },
   ];
 
   return (
@@ -51,20 +58,20 @@ const Header = () => {
           {/* Desktop Menu */}
           <nav className="hidden md:flex ml-5 space-x-8 text-white font-campton">
             {navLinks.map((link, i) => {
-              if (link.name === "COMPANY") {
+              if (link.name === "STONES") {
                 return (
                   <div key={i} className="relative flex items-center">
                     <span
                       className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
                       onClick={() => {
-                        setDesktopCompanyOpen(!desktopCompanyOpen);
-                        setDesktopBlogOpen(false);
+                        setDesktopStonesOpen(!desktopStonesOpen);
+                        setDesktopRawOpen(false);
                       }}
                     >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {desktopCompanyOpen && (
+                    {desktopStonesOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
                         <Link to="/about-us" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
                         <Link to="/success-page" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
@@ -76,20 +83,68 @@ const Header = () => {
                 );
               }
 
-              if (link.name === "BLOG") {
+              if (link.name === "RAW DIAMOND RINGS") {
                 return (
                   <div key={i} className="relative flex items-center">
                     <span
                       className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
                       onClick={() => {
-                        setDesktopBlogOpen(!desktopBlogOpen);
-                        setDesktopCompanyOpen(false);
+                        setDesktopRawOpen(!desktopRawOpen);
+                        setDesktopStonesOpen(false);
                       }}
                     >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {desktopBlogOpen && (
+                    {desktopRawOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="/about-us" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
+                        <Link to="/success-page" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
+                        <Link to="/events" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
+                        <Link to="/community" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (link.name === "JEWELRY") {
+                return (
+                  <div key={i} className="relative flex items-center">
+                    <span
+                      className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
+                      onClick={() => {
+                        setDesktopJewelryOpen(!desktopJewelryOpen);
+                        setDesktopAboutOpen(false);
+                      }}
+                    >
+                      {link.name}
+                      <ChevronDown size={16} />
+                    </span>
+                    {desktopJewelryOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="/blog" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
+                        <Link to="/category" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (link.name === "ABOUT") {
+                return (
+                  <div key={i} className="relative flex items-center">
+                    <span
+                      className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
+                      onClick={() => {
+                        setDesktopAboutOpen(!desktopAboutOpen);
+                        setDesktopJewelryOpen(false);
+                      }}
+                    >
+                      {link.name}
+                      <ChevronDown size={16} />
+                    </span>
+                    {desktopAboutOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
                         <Link to="/blog" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
                         <Link to="/category" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
@@ -142,14 +197,14 @@ const Header = () => {
 
           <nav className="flex flex-col px-6 py-6 space-y-6 text-lg text-white font-campton">
             {navLinks.map((link, i) => {
-              if (link.name === "COMPANY") {
+              if (link.name === "STONES") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                    <span onClick={() => setMobileStonesOpen(!mobileStonesOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {mobileCompanyOpen && (
+                    {mobileStonesOpen && (
                       <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
                         <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>About Us</Link>
                         <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Success Page</Link>
@@ -161,14 +216,48 @@ const Header = () => {
                 );
               }
 
-              if (link.name === "BLOG") {
+              if (link.name === "RAW DIAMOND RINGS") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileBlogOpen(!mobileBlogOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                    <span onClick={() => setMobileRawOpen(!mobileRawOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {mobileBlogOpen && (
+                    {mobileRawOpen && (
+                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
+                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
+                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (link.name === "JEWELRY") {
+                return (
+                  <div key={i} className="relative">
+                    <span onClick={() => setMobileJewelryOpen(!mobileJewelryOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                      {link.name}
+                      <ChevronDown size={16} />
+                    </span>
+                    {mobileJewelryOpen && (
+                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
+                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
+                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (link.name === "ABOUT") {
+                return (
+                  <div key={i} className="relative">
+                    <span onClick={() => setMobileAboutOpen(!mobileAboutOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                      {link.name}
+                      <ChevronDown size={16} />
+                    </span>
+                    {mobileAboutOpen && (
                       <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
                         <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
                         <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>

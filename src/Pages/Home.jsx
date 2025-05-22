@@ -54,7 +54,7 @@ const Home = () => {
         </div>
 
         {/* Text on the left side */}
-        <div className="relative z-10 lg:h-full h-[500px] flex items-center lg:p-0 p-5 max-w-7xl mx-auto">
+        <div className="relative z-0 lg:h-full h-[500px] flex items-center lg:p-0 p-5 max-w-7xl mx-auto">
           <div className="text-white max-w-2xl transition-opacity duration-1000 ease-in-out">
             <h1 className="text-4xl lg:text-7xl font-bold mb-4">
               {images[currentIndex].title}

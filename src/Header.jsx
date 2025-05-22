@@ -128,7 +128,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-[#333333] z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
+        <div className={`absolute top-0 left-0 h-screen w-screen bg-[#333333] z-50 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
               <Link to="/">

@@ -6,6 +6,10 @@ const DiamondRings = () => {
         <div className='max-w-7xl mx-auto'>
             <h1 className='text-[#97877a] lg:text-4xl text-xl font-medium mt-10 text-center'>Customizable Rough Diamond Rings</h1>
         </div>
+        
+        <div>
+            
+        </div>
     </section>
   )
 }

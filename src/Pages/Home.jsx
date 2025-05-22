@@ -68,7 +68,7 @@ const Home = () => {
 
       {/* Move this OUTSIDE the section */}
       <div className="bg-[#97877a] text-white p-8 text-center">
-        <h1 className="text-lg lg:text-4xl font-semibold mb-2">
+        <h1 className="text-base lg:text-4xl font-semibold mb-2">
           CRAFTED WITH CARE, WORN WITH PURPOSE
         </h1>
         <p className="text-sm lg:text-lg mx-auto">

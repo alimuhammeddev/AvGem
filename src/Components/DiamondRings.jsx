@@ -10,7 +10,7 @@ const DiamondRings = () => {
 
             <div className='max-w-7xl mx-auto lg:mt-10 mt-5 lg:p-0 p-5'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4'>
-                    <a href="#" className="group block overflow-hidden">
+                    <div className="group block overflow-hidden">
                         <div className="relative h-[350px] sm:h-[450px]">
                             <img
                                 src={d1}
@@ -32,7 +32,7 @@ const DiamondRings = () => {
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
                         </div>
-                    </a>
+                    </div>
                     <a href="#" className="group block overflow-hidden">
                         <div className="relative h-[350px] sm:h-[450px]">
                             <img

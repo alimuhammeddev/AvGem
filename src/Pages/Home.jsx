@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Header';
 import { bg1, bg2 } from '../assets';
 import DiamondRings from '../Components/DiamondRings';
+import DiamondShip from '../Components/DiamondShip';
 
 const Home = () => {
   const images = [
@@ -78,6 +79,10 @@ const Home = () => {
 
       <div>
         <DiamondRings />
+      </div>
+
+      <div>
+        <DiamondShip />
       </div>
     </>
   );

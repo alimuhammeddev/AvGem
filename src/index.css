@@ -7,3 +7,14 @@
 * {
     font-family: "Ancizar Sans", sans-serif;
 }
+
+/* Change active bullet and default bullet color */
+.testimonial-swiper .swiper-pagination-bullet {
+  background-color: #97877a; /* Default bullet color */
+  opacity: 1;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background-color: #5e5046; /* Active bullet color */
+}
+

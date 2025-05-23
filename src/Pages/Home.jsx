@@ -8,6 +8,7 @@ import { Check } from 'lucide-react';
 import BestSelling from '../Components/BestSelling';
 import CTA from '../Components/CTA';
 import Testimonial from '../Components/Testimonial';
+import Footer from '../Footer';
 
 const Home = () => {
   const images = [
@@ -140,6 +141,10 @@ const Home = () => {
 
       <div>
         <Testimonial />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </>
   );

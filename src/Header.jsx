@@ -73,10 +73,10 @@ const Header = () => {
                     </span>
                     {desktopStonesOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="/about-us" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
-                        <Link to="/success-page" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
-                        <Link to="/events" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
-                        <Link to="/community" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
                       </div>
                     )}
                   </div>
@@ -98,10 +98,10 @@ const Header = () => {
                     </span>
                     {desktopRawOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="/about-us" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
-                        <Link to="/success-page" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
-                        <Link to="/events" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
-                        <Link to="/community" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
                       </div>
                     )}
                   </div>
@@ -123,8 +123,8 @@ const Header = () => {
                     </span>
                     {desktopJewelryOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
                       </div>
                     )}
                   </div>
@@ -146,8 +146,8 @@ const Header = () => {
                     </span>
                     {desktopAboutOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
                       </div>
                     )}
                   </div>
@@ -205,11 +205,11 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {mobileStonesOpen && (
-                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>About Us</Link>
-                        <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Success Page</Link>
-                        <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Events & Programs</Link>
-                        <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Our Community</Link>
+                      <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>About Us</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Success Page</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Events & Programs</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Our Community</Link>
                       </div>
                     )}
                   </div>
@@ -224,9 +224,9 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {mobileRawOpen && (
-                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
+                      <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Blog</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Category</Link>
                       </div>
                     )}
                   </div>
@@ -241,9 +241,9 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {mobileJewelryOpen && (
-                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
+                      <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Blog</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Category</Link>
                       </div>
                     )}
                   </div>
@@ -258,9 +258,9 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {mobileAboutOpen && (
-                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
+                      <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Blog</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Category</Link>
                       </div>
                     )}
                   </div>

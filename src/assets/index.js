@@ -17,6 +17,9 @@ import rd5 from './rd5.png';
 import rd6 from './rd6.png';
 import rd7 from './rd7.png';
 import rd8 from './rd8.png';
+import d5 from './d5.png';
+import wd1 from './wd1.png';
+import cta from './cta.png';
 
 export {
     logo,
@@ -38,4 +41,7 @@ export {
     rd6,
     rd7,
     rd8,
+    d5,
+    wd1,
+    cta,
 }

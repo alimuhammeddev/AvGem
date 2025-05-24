@@ -102,10 +102,10 @@ const Home = () => {
             <div className='lg:space-y-3 space-y-2 lg:p-10 p-5'>
               <h1 className='lg:text-4xl text-base text-white font-medium lg:text-center'>Our Dedication to Ethics</h1>
               <p className='lg:text-xl text-sm lg:text-center text-white'>As an independently run company with a goal to improve the world, our stones are all ethically sourced, meaning:</p>
-              <h1 className='text-white lg:text-xl flex items-center gap-3'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No child labor</h1>
-              <h1 className='text-white lg:text-xl flex items-center gap-3'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No No slave labor</h1>
-              <h1 className='text-white lg:text-xl flex items-center gap-3'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No No mining in natural protected areas</h1>
-              <h1 className='text-white lg:text-xl flex items-center gap-3'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No Workers are protected and paid a living wage</h1>
+              <h1 className='text-white lg:text-xl flex items-center gap-2'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No child labor</h1>
+              <h1 className='text-white lg:text-xl flex items-center gap-2'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No No slave labor</h1>
+              <h1 className='text-white lg:text-xl flex items-center gap-2'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No No mining in natural protected areas</h1>
+              <h1 className='text-white lg:text-xl flex items-center gap-2'><Check className='bg-white text-[#97877a] rounded-full p-1'/> No Workers are protected and paid a living wage</h1>
 
               <p className='lg:text-xl text-sm lg:text-center text-white'>We believe that when you know where your ring comes from and who created it, you can wear it with peace of mind</p>
               <div className='flex justify-center'>

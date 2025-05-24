@@ -8,7 +8,7 @@ const Footer = () => {
                 {/* About Section */}
                 <div>
                     <h2 className="text-xl font-semibold mb-4">
-                        AV Gem
+                        AVGem
                     </h2>
                     <p className="text-white">
                         We offer exquisite, handcrafted diamond rings that combine timeless elegance with exceptional quality, helping you celebrate life's most meaningful moments with confidence and style.

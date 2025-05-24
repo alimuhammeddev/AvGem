@@ -53,7 +53,7 @@ const DiamondRings = () => {
                                 Limited Edition Diamond Ring
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$289.99</p>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -76,7 +76,7 @@ const DiamondRings = () => {
                                 Limited Edition Diamond Ring
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$129.99</p>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -99,7 +99,7 @@ const DiamondRings = () => {
                                 Limited Edition Diamond Ring
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$389.99</p>
                         </div>
                     </div>
                 </div>

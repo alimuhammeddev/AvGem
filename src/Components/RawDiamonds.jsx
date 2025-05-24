@@ -30,7 +30,7 @@ const RawDiamonds = () => {
                                 Raw Diamond
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$199.99</p>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -53,7 +53,7 @@ const RawDiamonds = () => {
                                 Raw Diamond
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$219.99</p>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -76,7 +76,7 @@ const RawDiamonds = () => {
                                 Raw Diamond
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$359.99</p>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -99,7 +99,7 @@ const RawDiamonds = () => {
                                 Raw Diamond
                             </h3>
 
-                            <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <p className="mt-1.5 tracking-wide text-gray-900">$229.99</p>
                         </div>
                     </div>
                 </div>

@@ -31,6 +31,7 @@ const DiamondRings = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$189.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -54,6 +55,7 @@ const DiamondRings = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$289.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -77,6 +79,7 @@ const DiamondRings = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$129.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -100,6 +103,7 @@ const DiamondRings = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$389.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                 </div>

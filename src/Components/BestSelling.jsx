@@ -31,6 +31,7 @@ const BestSelling = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$99.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -54,6 +55,7 @@ const BestSelling = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$349.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -77,6 +79,7 @@ const BestSelling = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$59.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>VIEW OPTIONS</button>
                         </div>
                     </div>
                 </div>

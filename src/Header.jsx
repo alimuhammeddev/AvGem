@@ -72,11 +72,10 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {desktopStonesOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Raw Diamonds</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Gemstones</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Wholesale for jewelers</Link>
                       </div>
                     )}
                   </div>
@@ -97,11 +96,9 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {desktopRawOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About Us</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Success Page</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Events & Programs</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Our Community</Link>
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Ready Made Raw Diamonds Rings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Build Unique Ring</Link>
                       </div>
                     )}
                   </div>
@@ -122,9 +119,15 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {desktopJewelryOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Raw Diamond Engagement Rings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Ready to Ship Jewelry</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Build Your Ring</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Wedding Bands</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Sapphire Engagement Rings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Earrings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Necklaces</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Custom Jewelry Design</Link>
                       </div>
                     )}
                   </div>
@@ -145,9 +148,15 @@ const Header = () => {
                       <ChevronDown size={16} />
                     </span>
                     {desktopAboutOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                      <div className="absolute top-full left-0 mt-2 w-56 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">About us</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Sources</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Reviews</Link>
                         <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Blog</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Category</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Press</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">FAQ</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Wholesale</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Contact</Link>
                       </div>
                     )}
                   </div>

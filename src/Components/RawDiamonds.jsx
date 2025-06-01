@@ -31,6 +31,7 @@ const RawDiamonds = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$199.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>Add to Cart</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -54,6 +55,7 @@ const RawDiamonds = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$219.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>Add to Cart</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -77,6 +79,7 @@ const RawDiamonds = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$359.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>Add to Cart</button>
                         </div>
                     </div>
                     <div className="group block overflow-hidden">
@@ -100,6 +103,7 @@ const RawDiamonds = () => {
                             </h3>
 
                             <p className="mt-1.5 tracking-wide text-gray-900">$229.99</p>
+                            <button className='bg-[#97877A] p-2 text-[#ffffff] mx-auto justify-center flex'>Add to Cart</button>
                         </div>
                     </div>
                 </div>

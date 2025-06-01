@@ -17,6 +17,7 @@ const Header = () => {
   const [desktopStonesOpen, setDesktopStonesOpen] = useState(false);
 
   const toggleMenu = () => setOpen(!open);
+  
   const closeAllMenus = () => {
     setOpen(false);
     setMobileStonesOpen(false);
@@ -27,6 +28,22 @@ const Header = () => {
     setDesktopJewelryOpen(false);
     setDesktopAboutOpen(false);
     setDesktopStonesOpen(false);
+  };
+
+  // Helper functions to close all desktop dropdowns except the one being opened
+  const closeAllDesktopDropdowns = () => {
+    setDesktopRawOpen(false);
+    setDesktopJewelryOpen(false);
+    setDesktopAboutOpen(false);
+    setDesktopStonesOpen(false);
+  };
+
+  // Helper functions to close all mobile dropdowns except the one being opened
+  const closeAllMobileDropdowns = () => {
+    setMobileStonesOpen(false);
+    setMobileRawOpen(false);
+    setMobileJewelryOpen(false);
+    setMobileAboutOpen(false);
   };
 
   const navLinks = [
@@ -64,8 +81,8 @@ const Header = () => {
                     <span
                       className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
                       onClick={() => {
+                        closeAllDesktopDropdowns();
                         setDesktopStonesOpen(!desktopStonesOpen);
-                        setDesktopRawOpen(false);
                       }}
                     >
                       {link.name}
@@ -88,8 +105,8 @@ const Header = () => {
                     <span
                       className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
                       onClick={() => {
+                        closeAllDesktopDropdowns();
                         setDesktopRawOpen(!desktopRawOpen);
-                        setDesktopStonesOpen(false);
                       }}
                     >
                       {link.name}
@@ -111,8 +128,8 @@ const Header = () => {
                     <span
                       className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
                       onClick={() => {
+                        closeAllDesktopDropdowns();
                         setDesktopJewelryOpen(!desktopJewelryOpen);
-                        setDesktopAboutOpen(false);
                       }}
                     >
                       {link.name}
@@ -140,8 +157,8 @@ const Header = () => {
                     <span
                       className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
                       onClick={() => {
+                        closeAllDesktopDropdowns();
                         setDesktopAboutOpen(!desktopAboutOpen);
-                        setDesktopJewelryOpen(false);
                       }}
                     >
                       {link.name}
@@ -209,16 +226,21 @@ const Header = () => {
               if (link.name === "STONES") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileStonesOpen(!mobileStonesOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                    <span 
+                      onClick={() => {
+                        closeAllMobileDropdowns();
+                        setMobileStonesOpen(!mobileStonesOpen);
+                      }} 
+                      className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
                     {mobileStonesOpen && (
                       <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>About Us</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Success Page</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Events & Programs</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Our Community</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Raw Diamonds</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Gemstones</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Wholesale for jewelers</Link>
                       </div>
                     )}
                   </div>
@@ -228,14 +250,20 @@ const Header = () => {
               if (link.name === "RAW DIAMOND RINGS") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileRawOpen(!mobileRawOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                    <span 
+                      onClick={() => {
+                        closeAllMobileDropdowns();
+                        setMobileRawOpen(!mobileRawOpen);
+                      }} 
+                      className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
                     {mobileRawOpen && (
                       <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Category</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Ready Made Raw Diamonds Rings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Build Unique Ring</Link>
                       </div>
                     )}
                   </div>
@@ -245,14 +273,26 @@ const Header = () => {
               if (link.name === "JEWELRY") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileJewelryOpen(!mobileJewelryOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                    <span 
+                      onClick={() => {
+                        closeAllMobileDropdowns();
+                        setMobileJewelryOpen(!mobileJewelryOpen);
+                      }} 
+                      className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
                     {mobileJewelryOpen && (
                       <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Category</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Raw Diamond Engagement Rings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Ready to Ship Jewelry</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Build Your Ring</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Wedding Bands</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Sapphire Engagement Rings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Earrings</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Necklaces</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Custom Jewelry Design</Link>
                       </div>
                     )}
                   </div>
@@ -262,14 +302,26 @@ const Header = () => {
               if (link.name === "ABOUT") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileAboutOpen(!mobileAboutOpen)} className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer">
+                    <span 
+                      onClick={() => {
+                        closeAllMobileDropdowns();
+                        setMobileAboutOpen(!mobileAboutOpen);
+                      }} 
+                      className="flex items-center gap-1 text-sm hover:text-[#97877a] cursor-pointer"
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
                     {mobileAboutOpen && (
                       <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>About us</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Sources</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Reviews</Link>
                         <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Category</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Press</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>FAQ</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Wholesale</Link>
+                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Contact</Link>
                       </div>
                     )}
                   </div>

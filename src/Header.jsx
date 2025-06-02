@@ -49,7 +49,7 @@ const Header = () => {
   const navLinks = [
     { name: "STONES", url: "#" },
     { name: "RAW DIAMOND RINGS", url: "#" },
-    { name: "RING BUILDER", url: "" },
+    { name: "RING BUILDER", url: "/ring-builder" },
     { name: "JEWELRY", url: "#" },
     { name: "ABOUT", url: "#" },
   ];
@@ -90,7 +90,7 @@ const Header = () => {
                     </span>
                     {desktopStonesOpen && (
                       <div className="absolute top-full left-0 mt-2 w-56 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Raw Diamonds</Link>
+                        <Link to="/raw-diamond" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Raw Diamonds</Link>
                         <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Gemstones</Link>
                         <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Wholesale for jewelers</Link>
                       </div>
@@ -114,8 +114,7 @@ const Header = () => {
                     </span>
                     {desktopRawOpen && (
                       <div className="absolute top-full left-0 mt-2 w-56 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Ready Made Raw Diamonds Rings</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Build Unique Ring</Link>
+                        <Link to="/ready-made-raw-diamond-ring" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]">Ready Made Raw Diamonds Rings</Link>
                       </div>
                     )}
                   </div>
@@ -238,7 +237,7 @@ const Header = () => {
                     </span>
                     {mobileStonesOpen && (
                       <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Raw Diamonds</Link>
+                        <Link to="/raw-diamond" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Raw Diamonds</Link>
                         <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Gemstones</Link>
                         <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Wholesale for jewelers</Link>
                       </div>
@@ -262,8 +261,7 @@ const Header = () => {
                     </span>
                     {mobileRawOpen && (
                       <div className="mt-2 w-40 bg-[#97877a] shadow-md rounded-md py-2 z-50">
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Ready Made Raw Diamonds Rings</Link>
-                        <Link to="#" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Build Unique Ring</Link>
+                        <Link to="/ready-made-raw-diamond-ring" className="block px-4 py-2 text-sm text-white hover:bg-[#333333]" onClick={closeAllMenus}>Ready Made Raw Diamonds Rings</Link>
                       </div>
                     )}
                   </div>

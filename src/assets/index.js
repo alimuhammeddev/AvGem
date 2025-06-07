@@ -20,6 +20,10 @@ import rd8 from './rd8.png';
 import d5 from './d5.png';
 import wd1 from './wd1.png';
 import cta from './cta.png';
+import roughdiamonds from './roughdiamonds.jpg';
+import cutdiamond from './cutdiamond.jpg';
+import sapphire from './sapphire.jpg';
+import tanzanite from './tanzanite.jpg';
 
 export {
     logo,
@@ -44,4 +48,8 @@ export {
     d5,
     wd1,
     cta,
+    roughdiamonds,
+    cutdiamond,
+    sapphire,
+    tanzanite,
 }

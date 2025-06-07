@@ -8,7 +8,7 @@ const RingBuilder = () => {
                 <Header />
             </div>
 
-            <div className='max-w-7xl mx-auto mt-20'>
+            <div className='max-w-7xl mx-auto mt-20 lg:p-0 p-5'>
                 <div>
                     <h1 className='lg:text-3xl text-center font-semibold'>Your Custom Ring</h1>
                     <div className="relative flex justify-center items-center lg:gap-12 mt-10">
@@ -32,7 +32,7 @@ const RingBuilder = () => {
                         </div>
 
                         {/* Line between 2 and 3 */}
-                        <div className="lg:w-60 w-28 h-[1px] bg-blue-400 absolute lg:mr-20 ml-48  top-5 z-0"></div>
+                        <div className="lg:w-60 w-24 h-[1px] bg-blue-400 absolute lg:mr-20 ml-40  top-5 z-0"></div>
 
                         {/* Step 3 */}
                         <div className="flex flex-col items-center relative">
@@ -43,7 +43,7 @@ const RingBuilder = () => {
                         </div>
 
                         {/* Line between 3 and 4 */}
-                        <div className="lg:w-56 w-24 h-[1px] bg-blue-400 absolute top-5 lg:ml-96 z-0"></div>
+                        <div className="lg:w-56 w-20 h-[1px] bg-blue-400 absolute top-5 lg:ml-96 z-0"></div>
 
                         {/* Step 4 */}
                         <div className="flex flex-col items-center relative">
@@ -53,10 +53,10 @@ const RingBuilder = () => {
                             <p className="mt-2 text-center text-blue-400">Your custom ring concept is ready!</p>
                         </div>
                     </div>
-
-
                 </div>
             </div>
+
+            <div></div>
         </section>
     )
 }

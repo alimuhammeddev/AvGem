@@ -8,7 +8,7 @@ const RingBuilder = () => {
                 <Header />
             </div>
 
-            <div className='max-w-7xl mx-auto mt-20 lg:p-0 p-5'>
+            <div className='max-w-7xl mx-auto mt-20 lg:p-0 p-2'>
                 <div>
                     <h1 className='lg:text-3xl text-center font-semibold'>Your Custom Ring</h1>
                     <div className="relative flex justify-center items-center lg:gap-12 mt-10">

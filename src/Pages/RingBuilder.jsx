@@ -11,48 +11,35 @@ const RingBuilder = () => {
             <div className='max-w-7xl mx-auto mt-20 lg:p-0 p-2'>
                 <div>
                     <h1 className='lg:text-3xl text-center font-semibold'>Your Custom Ring</h1>
-                    <div className="relative flex justify-center items-center lg:gap-12 mt-10">
-                        {/* Step 1 */}
-                        <div className="flex flex-col items-center relative">
-                            <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center text-lg font-semibold z-10">
-                                1
-                            </div>
-                            <p className="mt-2 text-center text-blue-400">Choose your stone type</p>
-                        </div>
+                    <div class="flex items-center justify-between px-4 py-8 space-x-2 sm:space-x-4">
+  
+  <div class="flex flex-col items-center flex-1 relative">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold z-10">1</div>
+    <div class="mt-2 text-center text-sm">Step One</div>
+    <div class="absolute top-5 left-1/2 w-full h-0.5 bg-blue-300 -z-0"></div>
+  </div>
 
-                        {/* Line between 1 and 2 */}
-                        <div className="lg:w-64 w-20 h-[1px] bg-blue-400 absolute top-5 lg:mr-96 mr-56 z-0"></div>
+  
+  <div class="flex flex-col items-center flex-1 relative">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold z-10">2</div>
+    <div class="mt-2 text-center text-sm">Step Two</div>
+    <div class="absolute top-5 left-0 lg:w-[500px] w-[100px] h-0.5 bg-blue-300 -z-0"></div>
+  </div>
 
-                        {/* Step 2 */}
-                        <div className="flex flex-col items-center relative">
-                            <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center text-lg font-semibold z-10">
-                                2
-                            </div>
-                            <p className="mt-2 text-center text-blue-400">Select your center stone</p>
-                        </div>
+  
+  <div class="flex flex-col items-center flex-1 relative">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold z-10">3</div>
+    <div class="mt-2 text-center text-sm">Step Three</div>
+    <div class="absolute top-5 left-0 lg:w-[450px] w-[120px] h-0.5 bg-blue-300 -z-0"></div>
+  </div>
 
-                        {/* Line between 2 and 3 */}
-                        <div className="lg:w-60 w-24 h-[1px] bg-blue-400 absolute lg:mr-20 ml-40  top-5 z-0"></div>
+ 
+  <div class="flex flex-col items-center flex-1 relative">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold z-10">4</div>
+    <div class="mt-2 text-center text-sm">Step Four</div>
+  </div>
+</div>
 
-                        {/* Step 3 */}
-                        <div className="flex flex-col items-center relative">
-                            <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center text-lg font-semibold z-10">
-                                3
-                            </div>
-                            <p className="mt-2 text-center text-blue-400">Select your ring setting</p>
-                        </div>
-
-                        {/* Line between 3 and 4 */}
-                        <div className="lg:w-56 w-20 h-[1px] bg-blue-400 absolute top-5 lg:ml-96 z-0"></div>
-
-                        {/* Step 4 */}
-                        <div className="flex flex-col items-center relative">
-                            <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center text-lg font-semibold z-10">
-                                4
-                            </div>
-                            <p className="mt-2 text-center text-blue-400">Your custom ring concept is ready!</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 
